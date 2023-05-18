@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запис на вакцинацію</title>
+    <link rel="shortcut icon" href="/img/svg/tab.svg" type="image/jtab.svg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="js/appointment.js"></script>
+    <link rel="stylesheet" href="./css/vaccine.css">
+</head>
+<div class="wrapper">
+<body>
+    <header class="header">
+      <div class="header_responsive hiden">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="./img/svg/logo_about_project.svg" alt="Медична інформаційна система" class="header_logo-pic"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
+                <li class="header_item btn_back btn">
+                    <a href="/appointment.html" class="to_zap">ЗАПИСАТИСЯ на прийом</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/acc_pat.html">Мій профіль</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/edit.html">Редагувати профіль</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/recipe.html">Рецепти</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/index.html">Вихід</a>
+                </li>
+              </ul>
+      
+              <ul class="navbar-nav">
+                <div class="dropdown dropdown_responsive">
+                  <button class="dropbtn"><div class="text_sup_resp">Служба підтримки<span_s>&#9660;</span_s></div></button>
+                  <div class="dropdown-content">
+                      Напишіть у<span_support> Viber</span_support> <br>
+                      або надішліть листа <br>
+                      на <a class="span_support" href="mailto:MIS_framework@gmail.com">MIS_framework@gmail.com</a> <br>
+                      Щось термінове? <br>
+                      Телефонуйте: <br>
+                      <a class="span_support" href="tel:(093) 170 98 57">(093) 170 98 57</a> <br>
+                      (Пн-Пт: 8:30-17:30, <br>
+                      Сб-Нд: 9:00-17:30) 
+                </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="header_pc">
+        <div class="header_wrapper container">
+        <div class="header_logo">
+            <a href="/" class="header_logo-link">
+                <img src="./img/svg/logo_about_project.svg" alt="Медична інформаційна система" class="header_logo-pic">
+            </a>
+        </div>
+        <div class="nav_and_myacc">
+        <nav class="header_nav">
+            <ul class="header_list">
+                <div class="dropdown">
+                    <button class="dropbtn"><img src="./img/svg/dropdown_icon_support.svg" width="25px" alt="" class="icon_support"><div class="text_sup_resp">Служба підтримки<span_s>&#9660;</span_s></div></button>
+                    <div class="dropdown-content">
+                        Напишіть у<span_support> Viber</span_support> <br>
+                        або надішліть листа <br>
+                        на <a class="span_support" href="mailto:MIS_framework@gmail.com">MIS_framework@gmail.com</a> <br>
+                        Щось термінове? <br>
+                        Телефонуйте: <br>
+                        <a class="span_support" href="tel:(093) 170 98 57">(093) 170 98 57</a> <br>
+                        (Пн-Пт: 8:30-17:30, <br>
+                        Сб-Нд: 9:00-17:30) 
+                  </div>
+                  </div>
+                <li class="header_item btn_back btn">
+                    <a href="/appointment.html" class="to_zap"> ЗАПИСАТИСЯ<br>на прийом</a>
+                </li>
+            </ul>  
+          </nav>
+          <div class="dropdown_acc dropdown me-1">
+            <button type="button" class="btn my_acc dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+                <img src="/img/acc_ico.png" height="40px" width="40px" alt="" class="profile_header">
+            </button>
+            <div class="my_acc">
+              <p class="header_name">Прізвище Ім'я По батькові</p>
+          </div>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+              <li><a class="dropdown-item" href="/acc_pat.html">Мій профіль</a></li>
+              <li><a class="dropdown-item" href="/edit.html">Редагувати профіль</a></li>
+              <li><a class="dropdown-item" href="/recipe.html">Рецепти</a></li>
+              <li><a class="dropdown-item" href="/index.html">Вихід</a></li>
+            </ul>
+          </div>
+        <style>
+              @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+              @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+              @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  
+            .nav_and_myacc{width: auto;}
+            .col-md-2{
+                width: auto;
+            }
+            .dropdown-item:active{
+                background-color:#14c2c5c9;
+            }
+            .dropdown-item{
+                border-bottom: 1px solid #dadada;
+            }
+            .dropdown-menu{
+                background-color: rgba(255, 255, 255, 0.911);
+                transform: translateY(-30px);
+                opacity:0;
+                -webkit-animation:fadeIn ease-in 1;
+                -moz-animation:fadeIn ease-in 1;
+                animation:fadeIn ease-in 1;
+  
+                -webkit-animation-fill-mode:forwards;
+                -moz-animation-fill-mode:forwards;
+                animation-fill-mode:forwards;
+  
+                -webkit-animation-duration:0.1s;
+                -moz-animation-duration:0.1s;
+                animation-duration:0.1s;
+                min-width: 15rem;
+                font-size: 1.1rem;
+            }
+            .btn{
+                padding-right: 0;
+                padding-left: 0;
+            }
+            .dropdown-toggle{
+                padding: 5px;
+            }
+            .row{
+              --bs-gutter-x: none;
+            }
+            .btn:focus{
+                box-shadow: rgba(32, 218, 222, 0.4) 0px 5px, rgba(32, 218, 222, 0.3) 0px 10px, rgba(32, 218, 222, 0.2) 0px 15px, rgba(32, 218, 222, 0.1) 0px 20px, rgba(32, 218, 222, 0.05) 0px 25px;            
+            }
+        </style></div>
+        </div></div>
+        <div class="header_blue_line"><br></div>
+        <div class="intro_page">Запис на вакцинацію</div>
+    </header>
+    <main class="main_information container">
+        <div class="row">
+            <div class="col-xxl filter">
+              <form name="my_appointment">
+                <div class="first_filter">
+                <select class="selected_style" name="city" placeholder="Місто" onchange="document.my_appointment.place.disabled = !this.selectedIndex">
+                    <option value selected="selected"disabled="disabled">Місто</option>
+                    <option class="change" value="Lutsk">Луцьк</option>
+                </select>
+                <select class="selected_style" name="place" placeholder="Заклад" disabled="true" onchange="document.my_appointment.doctor.disabled = !this.selectedIndex">
+                <option value selected="selected"disabled="disabled">Заклад</option>
+                <option class="change" value="Man">Чоловіча</option>
+                <option class="change" value="Woman">Жіноча</option>
+            </select>
+            <select class="selected_style" name="doctor" placeholder="Лікар" disabled="true">
+                <option value selected="selected"disabled="disabled">Лікар(будь-який)</option>
+                <option class="change" value="Man">Чоловіча</option>
+                <option class="change" value="Woman">Жіноча</option>
+            </select>
+            </div>                
+            <div class="second_filter">
+                <input class="text selected_style" type="text" name="datepicker" placeholder="Дата" required="" autocomplete="off" onchange="document.my_appointment.time.disabled = !this.selectedIndex">
+                <select class="selected_style" name="time" placeholder="Час">
+                <option value selected="selected"disabled="disabled">Час</option>
+                <option class="change" value="9:00">9:00</option>
+                <option class="change" value="9:30">9:30</option>
+                <option class="change" value="10:00">10:00</option>
+                <option class="change" value="10:30">10:30</option>
+                <option class="change" value="11:00">11:00</option>
+                <option class="change" value="11:30">11:30</option>
+                <option class="change" value="12:00">12:00</option>
+                <option class="change" value="12:30">12:30</option>
+                <option class="change" value="13:00">13:00</option>
+                <option class="change" value="13:00">13:30</option>
+            </select>
+            </div></form></div>
+            <div class="logo_center col-5">
+                <img src="/img/svg/logo.svg" alt="" class="logo_resp">
+            </div>
+            <div class="yellow_info col-7">
+                <div class="first_cage">
+                    <p class="txt_yellow_info">
+                        Для запису на вакцинацію необхідно обрати дату та лікаря. Якщо лікаря не обрано, реЄстратура закладу отримає сповіщення та уточнить з вами можливість проведення вакцинації. Інформацію про успішний запис на вакцинацію Вам буде відправлено на електронну пошту, яку ви вказали у кабінеті.                    </p>
+                </div>
+                <div class="second_cage">
+                    <p class="txt_yellow_info">
+                        Увага! Реєстратура закладу може редагувати, видаляти та приховувати графік своїх працівників від самостійного запису на прийом пацієнтами. Тому, у випадку, якщо під час запису, ви не можете знайти того чи іншого медичного працівника, звертайтесь у реєстратуру медичного закладу для уточнення можливості запису.
+                    </p>
+                </div>
+            </div>
+            <h3>Залиште коментар</h3>
+            <textarea id="patient-comment" style="padding-left: 7px; "name="comment" placeholder="Приклад: Бажаю записатись на безкоштовну вакцинацію проти коронавірусної хвороби COVID-19, але 2 дні тому у мене була температура."></textarea>        
+        </div>
+        <button class="send_button">
+            Записатися
+        </button>    
+    </main></div>
+<footer class="footer_wrapper">
+    <div class="footer_item container">
+    <div class="footer_logo_black col-3">
+        <a href="/index.html"><img src="/img/svg/logo_about_project.svg" alt="" class="logo_black"></a>
+    </div>
+    <nav class="footer_nav col-6">
+        <ul class="footer_menu">
+            <li class="footer_link"><a href="/" class="footer_menu-link">Головна</a></li>
+            <li class="footer_link"><a href="/contacts.html" class="footer_menu-link">Контакти</a></li>
+            <li class="footer_link"><a href="/rules.html" class="footer_menu-link">Правила</a></li>
+            <li class="footer_link"><a href="/about_project.html" class="footer_menu-link">Про проєкт</a></li>
+        </ul>
+    </nav>
+    <div class="credit">Design by IBSsoft</div>
+    </div>
+    <div class="hiden"></div>
+</footer>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+<style>
+	.datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover {
+  background-color: #14c2c557;
+}
+.datepicker table tr td.today:hover, .datepicker table tr td.today:hover:hover{
+  background-color: #1795974d;
+}
+.datepicker-dropdown:before{
+  display: none;
+}
+.datepicker-dropdown:after{
+  display: none;
+}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

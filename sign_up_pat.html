@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Реєстрація аккаунта</title>
+	<link rel="shortcut icon" href="/img/svg/tab.svg" type="image/jtab.svg">
+	<link rel="stylesheet" href="./css/sign_up_pat.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+	<header class="header">
+        <div class="header_wrapper container">
+        <div class="header_logo">
+            <a href="/" class="header_logo-link">
+                <img src="./img/svg/logo_about_project.svg" alt="Медична інформаційна система" class="header_logo-pic">
+            </a>
+        </div>
+        <nav class="header_nav">
+            <ul class="header_list">
+                <li class="header_item btn_back">
+                    <a href="/" class="to_back"><img src="img/svg/arrow_back.png" width="30" height="15"> На головну</a>
+                </li>
+                <li class="header_item">
+                  <a href="/login.html" class="to_akk"> <strong>Увійти</strong><br>в особистий кабінет</a>
+              </li>
+            </ul>  
+          </nav>
+        </div>
+        <div class="header_blue_line"><br></div>
+        <h1 class="intro_page">Реєстрація користувача</h1>
+    </header>
+	<div class="main-w3layouts wrapper">
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form action="#" method="post">
+					<input class="text" type="text" name="firstname" placeholder="Прізвище" required="">
+					<input class="text" type="text" name="lastname" placeholder="Ім'я" required="">
+					<input class="text" type="text" name="surname" placeholder="По батькові" required="">
+					<input class="text" type="text" name="birthday" placeholder="Дата народження" required="" autocomplete="off">
+					<input class="text phone" type="tel" name="phone" placeholder="Телефон" required="" maxlength="13">
+					<select class="text" name="character" placeholder="Оберіть стать..">
+						<option value selected="selected"disabled="disabled">Оберіть стать..</option>
+						<option class="change" value="Man">Чоловіча</option>
+						<option class="change" value="Woman">Жіноча</option>
+					  </select>
+					  <div class="prod_checbox" >  
+						<div class="radio-toolbar"> 
+							<input type="radio" id="radio1" name="radios" value="Пацієнт" checked>
+							<label for="radio1">Пацієнт</label>
+							<input type="radio" id="radio2" name="radios" value="Медпрацівник">
+							<label for="radio2">Медпрацівник</label>
+						</div> 
+					</div>
+					<input class="med_zaklad hiden" type="text" name="med_zaklad" placeholder="Медичний заклад">
+					<input class="job hiden" type="text" name="job" placeholder="Посада">
+					<input class="text email" type="email" name="email" placeholder="Email" required="">
+					<div class="input_for_pass">
+						<div class="block_for_input">
+							<input class="text w3lpass hiden pass1" required type="password" id="input_test" minlength="6" placeholder="Пароль">
+							<div id="block_check" style="padding-right: 1em;"></div>
+							<div id="text_out">
+								<p id="text_change"></p>
+							</div>
+					   </div>
+						<input id="password-check" required class="text w3lpass pass hiden" type="password" name="password-chek" placeholder="Повторіть пароль" required="">
+					</div>
+					<div class="wthree-text">
+						<label class="anim">
+							<input type="checkbox" class="checkbox" required="">
+							<span>Я згідний з <a class="rules_link" href="/rules.html">Умовами використання та Політикою конфіденційності</span></a>
+						</label>
+						<div class="clear"> </div>
+					</div>
+					<input class="btn_submit" type="submit" value="Реєстрація">
+				</form>
+				<p>Вже маєте аккаунт? <a href="/login.html"> Увійдіть зараз!</a></p>
+			</div>
+		</div>
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<footer class="footer_wrapper">
+        <div class="footer_item container">
+        <div class="footer_logo_black col-3">
+            <a href="/index.html"><img src="/img/svg/logo_about_project.svg" alt="" class="logo_black"></a>
+        </div>
+        <nav class="footer_nav col-6">
+            <ul class="footer_menu">
+                <li class="footer_link"><a href="/" class="footer_menu-link">Головна</a></li>
+                <li class="footer_link"><a href="/rules.html" class="footer_menu-link">Правила</a></li>
+                <li class="footer_link"><a href="/contacts.html" class="footer_menu-link">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="credit">Design by IBSsoft</div>
+        </div>
+        <div class="hiden"></div>
+    </footer>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+<style>
+	.datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover {
+  background-color: #14c2c557;
+}
+.datepicker table tr td.today:hover, .datepicker table tr td.today:hover:hover{
+  background-color: #1795974d;
+}
+</style>
+	<script src="js/sign_up.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

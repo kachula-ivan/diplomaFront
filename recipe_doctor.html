@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепти</title>
+    <link rel="shortcut icon" href="/img/svg/tab.svg" type="image/jtab.svg">
+    <link rel="stylesheet" href="./css/recipe_doctor.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<div class="wrapper">
+<body>
+    <header class="header">
+      <div class="header_responsive hiden">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="./img/svg/logo_about_project.svg" alt="Медична інформаційна система" class="header_logo-pic"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
+                  <li class="header_item btn_back btn">
+                    <a href="/vaccine_doctor.html" class="to_vac"> ЗАПИСАТИСЯ на вакцинацію</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/acc_doctor.html">Мій профіль</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/edit_doctor.html">Редагувати профіль</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/recipe_doctor.html">Рецепти</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Вихід</a>
+                  </li>
+                </ul>
+        
+                <ul class="navbar-nav">
+                  <div class="dropdown dropdown_responsive">
+                    <button class="dropbtn"><div class="text_sup_resp">Служба підтримки<span_s>&#9660;</span_s></div></button>
+                    <div class="dropdown-content">
+                        Напишіть у<span_support> Viber</span_support> <br>
+                        або надішліть листа <br>
+                        на <a class="span_support" href="mailto:MIS_framework@gmail.com">MIS_framework@gmail.com</a> <br>
+                        Щось термінове? <br>
+                        Телефонуйте: <br>
+                        <a class="span_support" href="tel:(093) 170 98 57">(093) 170 98 57</a> <br>
+                        (Пн-Пт: 8:30-17:30, <br>
+                        Сб-Нд: 9:00-17:30) 
+                  </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="header_pc">
+          <div class="header_wrapper container">
+          <div class="header_logo">
+              <a href="/" class="header_logo-link">
+                  <img src="./img/svg/logo_about_project.svg" alt="Медична інформаційна система" class="header_logo-pic">
+              </a>
+          </div>
+          <div class="nav_and_myacc">
+          <nav class="header_nav">
+              <ul class="header_list">
+                  <div class="dropdown">
+                      <button class="dropbtn"><img src="./img/svg/dropdown_icon_support.svg" width="25px" alt="" class="icon_support"><div class="text_sup_resp">Служба підтримки<span_s>&#9660;</span_s></div></button>
+                      <div class="dropdown-content">
+                          Напишіть у<span_support> Viber</span_support> <br>
+                          або надішліть листа <br>
+                          на <a class="span_support" href="mailto:MIS_framework@gmail.com">MIS_framework@gmail.com</a> <br>
+                          Щось термінове? <br>
+                          Телефонуйте: <br>
+                          <a class="span_support" href="tel:(093) 170 98 57">(093) 170 98 57</a> <br>
+                          (Пн-Пт: 8:30-17:30, <br>
+                          Сб-Нд: 9:00-17:30) 
+                    </div>
+                    </div>
+                  <li class="header_item btn_back btn">
+                      <a href="/vaccine_doctor.html" class="to_vac"> ЗАПИСАТИСЯ<br>на вакцинацію</a>
+                  </li>
+              </ul>  
+            </nav>
+            <div class="dropdown_acc dropdown me-1">
+              <button type="button" class="btn my_acc dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+                  <img src="/img/acc_ico.png" height="40px" width="40px" alt="" class="profile_header">
+              </button>
+              <div class="my_acc">
+                <p class="header_name">Прізвище Ім'я По батькові</p>
+            </div>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                <li><a class="dropdown-item" href="/acc_doctor.html">Мій профіль</a></li>
+                <li><a class="dropdown-item" href="/edit_doctor.html">Редагувати профіль</a></li>
+                <li><a class="dropdown-item" href="/recipe_doctor.html">Рецепти</a></li>
+                <li><a class="dropdown-item" href="/index.html">Вихід</a></li>
+              </ul>
+            </div>
+        <style>
+              @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+              @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+              @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  
+            .nav_and_myacc{width: auto;}
+            .col-md-2{
+                width: auto;
+            }
+            .dropdown-item:active{
+                background-color:#14c2c5c9;
+            }
+            .dropdown-item{
+                border-bottom: 1px solid #dadada;
+            }
+            .dropdown-menu{
+                background-color: rgba(255, 255, 255, 0.911);
+                transform: translateY(-30px);
+                opacity:0;
+                -webkit-animation:fadeIn ease-in 1;
+                -moz-animation:fadeIn ease-in 1;
+                animation:fadeIn ease-in 1;
+  
+                -webkit-animation-fill-mode:forwards;
+                -moz-animation-fill-mode:forwards;
+                animation-fill-mode:forwards;
+  
+                -webkit-animation-duration:0.1s;
+                -moz-animation-duration:0.1s;
+                animation-duration:0.1s;
+                min-width: 15rem;
+                font-size: 1.1rem;
+            }
+            .btn{
+                padding-right: 0;
+                padding-left: 0;
+            }
+            .dropdown-toggle{
+                padding: 5px;
+            }
+            .row{
+              --bs-gutter-x: none;
+            }
+            .btn:focus{
+                box-shadow: rgba(32, 218, 222, 0.4) 0px 5px, rgba(32, 218, 222, 0.3) 0px 10px, rgba(32, 218, 222, 0.2) 0px 15px, rgba(32, 218, 222, 0.1) 0px 20px, rgba(32, 218, 222, 0.05) 0px 25px;            
+            }
+        </style></div>
+        </div></div>
+        <div class="header_blue_line"><br></div>
+        <div class="intro_page">Рецепти
+          <div class="slider-wrap">
+            <div class="wrap-desc">
+                <nav class="doctor_nav_resp">
+                    <ul class="doctor_menu_resp">
+                        <li class="nav_menu_doctor_resp"><a onclick="goUrl1()"; href="/My_schedule.html" class="doctor_menu-link">Мій графік</a></li>
+                        <li class="nav_menu_doctor_resp"><a onclick="goUrl2()"; href="/patients.html" class="doctor_menu-link">Пацієнти</a></li>
+                        <li class="nav_menu_doctor_resp"><a onclick="goUrl3()"; href="/search_patient.html" class="doctor_menu-link">Пошук пацієнта</a></li>
+                        <li class="nav_menu_doctor_resp"><a onclick="goUrl4()"; href="/recipe_doctor.html" class="doctor_menu-link">Рецепти</a></li>
+                        <li class="nav_menu_doctor_resp"><a onclick="goUrl5()"; href="/acc_doctor.html" class="doctor_menu-link">Мій профіль</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a class="more" href="#"><p class="txt_more">Меню</p></a>
+          </div>
+        </div>
+    </header>
+    <div class="container doctor_nav_resp_none">
+      <nav class="doctor_nav">
+        <ul class="doctor_menu">
+            <li class="nav_menu_doctor"><a href="/My_schedule.html" class="doctor_menu-link">Мій графік</a></li>
+            <li class="nav_menu_doctor"><a href="/patients.html" class="doctor_menu-link">Пацієнти</a></li>
+            <li class="nav_menu_doctor"><a href="/search_patient.html" class="doctor_menu-link">Пошук пацієнта</a></li>
+            <li class="nav_menu_doctor"><a href="/recipe_doctor.html" class="doctor_menu-link">Рецепти</a></li>
+            <li class="nav_menu_doctor"><a href="/acc_doctor.html" class="doctor_menu-link">Мій профіль</a></li>
+        </ul>
+    </nav>
+    </div>
+    <main class="main_information container">
+        <div class="row">
+            <div class="table_wrapper">
+                <style>
+                    td, th {
+                      border: 2px solid #fff;
+                      text-align: center;
+                      color: #fff;
+                      font-size: large;
+                      font-weight: 500;
+                    }
+                    </style><table class="first_table" id="table_id" width=100%>
+                    <tr>
+                        <th>Лікарський засіб</th>
+                        <th>Дата видачі</th>
+                        <th>Дії</th>
+                        <th>Пацієнт</th>
+                    </tr>
+                    <tr id="form">
+                        <td><textarea name="" id="" cols="50" rows="3"></textarea></td>
+                        <td><textarea name="" id="" cols="50" rows="3"></textarea></td>
+                        <td><textarea name="" id="" cols="30" rows="3"></textarea></td>
+                        <td><textarea name="" id="" cols="30" rows="3"></textarea></td>
+                    </tr>
+                </table>
+                <button id="button-3" class="button-3">Додати рецепт</button>    
+                <button class="button-3">Зберегти</button>    
+            </div>
+        </div>
+    </main></div>
+<footer class="footer_wrapper">
+    <div class="footer_item container">
+    <div class="footer_logo_black col-3">
+        <a href="/index.html"><img src="/img/svg/logo_about_project.svg" alt="" class="logo_black"></a>
+    </div>
+    <nav class="footer_nav col-6">
+        <ul class="footer_menu">
+            <li class="footer_link"><a href="/" class="footer_menu-link">Головна</a></li>
+            <li class="footer_link"><a href="/contacts.html" class="footer_menu-link">Контакти</a></li>
+            <li class="footer_link"><a href="/rules.html" class="footer_menu-link">Правила</a></li>
+            <li class="footer_link"><a href="/about_project.html" class="footer_menu-link">Про проєкт</a></li>
+        </ul>
+    </nav>
+    <div class="credit">Design by IBSsoft</div>
+    </div>
+    <div class="hiden"></div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/recipe_doctor.js"></script>
+<script src="/js/acc_doctor_nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

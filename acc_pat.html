@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій кабінет</title>
+    <link rel="shortcut icon" href="/img/svg/tab.svg" type="image/jtab.svg">
+    <link rel="stylesheet" href="./css/acc_pat.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<div class="wrapper">
+<body>
+    <header class="header">
+      <div class="header_responsive hiden">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="./img/svg/logo_about_project.svg" alt="Медична інформаційна система" class="header_logo-pic"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
+                <li class="header_item btn_back btn">
+                  <a href="/vaccine.html" class="to_vac"> ЗАПИСАТИСЯ на вакцинацію</a>
+              </li>
+              <li class="header_item btn">
+                <a href="/appointment.html" class="to_zap">ЗАПИСАТИСЯ на прийом</a>
+            </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/acc_pat.html">Мій профіль</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/edit.html">Редагувати профіль</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/recipe.html">Рецепти</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/index.html">Вихід</a>
+                </li>
+              </ul>
+      
+              <ul class="navbar-nav">
+                <div class="dropdown dropdown_responsive">
+                  <button class="dropbtn"><div class="text_sup_resp">Служба підтримки<span_s>&#9660;</span_s></div></button>
+                  <div class="dropdown-content">
+                      Напишіть у<span_support> Viber</span_support> <br>
+                      або надішліть листа <br>
+                      на <a class="span_support" href="mailto:MIS_framework@gmail.com">MIS_framework@gmail.com</a> <br>
+                      Щось термінове? <br>
+                      Телефонуйте: <br>
+                      <a class="span_support" href="tel:(093) 170 98 57">(093) 170 98 57</a> <br>
+                      (Пн-Пт: 8:30-17:30, <br>
+                      Сб-Нд: 9:00-17:30) 
+                </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="header_pc">
+        <div class="header_wrapper container">
+        <div class="header_logo">
+            <a href="/" class="header_logo-link">
+                <img src="./img/svg/logo_about_project.svg" alt="Медична інформаційна система" class="header_logo-pic">
+            </a>
+        </div>
+        <div class="nav_and_myacc">
+        <nav class="header_nav">
+            <ul class="header_list">
+                <div class="dropdown">
+                    <button class="dropbtn"><img src="./img/svg/dropdown_icon_support.svg" width="25px" alt="" class="icon_support"><div class="text_sup_resp">Служба підтримки<span_s>&#9660;</span_s></div></button>
+                    <div class="dropdown-content">
+                        Напишіть у<span_support> Viber</span_support> <br>
+                        або надішліть листа <br>
+                        на <a class="span_support" href="mailto:MIS_framework@gmail.com">MIS_framework@gmail.com</a> <br>
+                        Щось термінове? <br>
+                        Телефонуйте: <br>
+                        <a class="span_support" href="tel:(093) 170 98 57">(093) 170 98 57</a> <br>
+                        (Пн-Пт: 8:30-17:30, <br>
+                        Сб-Нд: 9:00-17:30) 
+                  </div>
+                  </div>
+                <li class="header_item btn_back btn">
+                    <a href="/vaccine.html" class="to_vac"> ЗАПИСАТИСЯ<br>на вакцинацію</a>
+                </li>
+                <li class="header_item btn">
+                  <a href="/appointment.html" class="to_zap">ЗАПИСАТИСЯ на прийом</a>
+                </li>
+            </ul>  
+          </nav>
+          <div class="dropdown_acc dropdown me-1">
+            <button type="button" class="btn my_acc dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+                <img src="/img/acc_ico.png" height="40px" width="40px" alt="" class="profile_header">
+            </button>
+            <div class="my_acc">
+              <p class="header_name">Прізвище Ім'я По батькові</p>
+          </div>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+              <li><a class="dropdown-item" href="/acc_pat.html">Мій профіль</a></li>
+              <li><a class="dropdown-item" href="/edit.html">Редагувати профіль</a></li>
+              <li><a class="dropdown-item" href="/recipe.html">Рецепти</a></li>
+              <li><a class="dropdown-item" href="/index.html">Вихід</a></li>
+            </ul>
+          </div>
+        <style>
+              @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+              @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+              @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  
+            .nav_and_myacc{width: auto;}
+            .col-md-2{
+                width: auto;
+            }
+            .dropdown-item:active{
+                background-color:#14c2c5c9;
+            }
+            .dropdown-item{
+                border-bottom: 1px solid #dadada;
+            }
+            .dropdown-menu{
+                background-color: rgba(255, 255, 255, 0.911);
+                transform: translateY(-30px);
+                opacity:0;
+                -webkit-animation:fadeIn ease-in 1;
+                -moz-animation:fadeIn ease-in 1;
+                animation:fadeIn ease-in 1;
+  
+                -webkit-animation-fill-mode:forwards;
+                -moz-animation-fill-mode:forwards;
+                animation-fill-mode:forwards;
+  
+                -webkit-animation-duration:0.1s;
+                -moz-animation-duration:0.1s;
+                animation-duration:0.1s;
+                min-width: 15rem;
+                font-size: 1.1rem;
+            }
+            .btn{
+                padding-right: 0;
+                padding-left: 0;
+            }
+            .dropdown-toggle{
+                padding: 5px;
+            }
+            .row{
+              --bs-gutter-x: none;
+            }
+            .btn:focus{
+                box-shadow: rgba(32, 218, 222, 0.4) 0px 5px, rgba(32, 218, 222, 0.3) 0px 10px, rgba(32, 218, 222, 0.2) 0px 15px, rgba(32, 218, 222, 0.1) 0px 20px, rgba(32, 218, 222, 0.05) 0px 25px;            
+            }
+        </style></div>
+        </div></div>
+        <div class="header_blue_line"><br></div>
+        <div class="intro_page">Мій кабінет</div>
+    </header>
+    <main class="main_information container">
+        <div class="row">
+            <div class="col-xxl passport">
+                <div class="flex_photo">
+                <div class="col-md-2 pass_photo">
+                    <img src="/img/acc_ico.png" width="186px" height="250px" alt="">
+                </div>
+                <div class="col-xs-12 nname">
+                    <p class="pass_name">ПРІЗВИЩЕ, ІМ'Я, ПО БАТЬКОВІ</p>
+                    <p class="id">id00000000</p>
+                <div class="flex_data">
+                <div class="col-xs-4 nname">
+                    <p class="birthday blue_p">День народження</p>
+                    <p class="adress blue_p">Адреса</p>
+                    <p class="tel blue_p">Телефон</p>
+                </div>
+                <div class="col-xs-4 nname">
+                    <p class="birthday_db ">01.01.2000</p>
+                    <a href="/edit.html" style="text-decoration: none;"><p class="adress_db blue_p">Додати адресу</p></a>
+                    <p class="tel_db ">+380 123 45 67 89</p>
+                </div></div></div>
+            <div class="col-xs-4 nname flex_data family_doctor">
+               <p class="p_family">Сімейний лікар</p>
+                <div class="col-xs-4 button_show_family">
+                    Показати
+                </div>
+            </div></div>
+            </div>
+            <div class="intro_acc_h"><h1 class="karta">Медична карта пацієнта</h1></div>
+            <div class="table_wrapper">
+                <style>
+                    td, th {
+                      border: 2px solid #fff;
+                      text-align: center;
+                      color: #fff;
+                      font-size: large;
+                      font-weight: 500;
+                    }
+                    </style><table class="first_table" width=100%>
+                    <tr>
+                        <th>Дата створення</th>
+                        <th>Дата останнього редагування</th>
+                        <th>Тип</th>
+                        <th>Спеціальність</th>
+                        <th>Заклад</th>
+                        <th>Лікар</th>
+                        <th>Дії</th>
+                    </tr>
+                    <tr id="form">
+                        <td>
+                            <div class="txt_v">Від</div>
+                            <input type="date" class="form-control date-input">
+                            <div class="txt_d">До</div>
+                            <input type="date" class="form-control date-input">
+                        </td>
+                        <td><div class="txt_v">Від</div>
+                            <input type="date" class="form-control date-input">
+                            <div class="txt_d">До</div>
+                            <input type="date" class="form-control date-input">
+                        </td>
+                        <td><select id="sel" class="form-control"><option value="none" selected="selected">Оберіть..</option> <option value="Форма">
+                            Форма
+                          </option><option value="Консультація">
+                            Консультація
+                          </option><option value="Аналізи">
+                            Аналізи
+                          </option><option value="Вкладений файл">
+                            Вкладений файл
+                          </option><option value="Стаціонар">
+                            Стаціонар
+                          </option><option value="Вакцинація">
+                            Вакцинація
+                          </option><option value="Діагностика">
+                            Діагностика
+                          </option></select></td>
+                        <td><select id="sele" class="form-control"><option value="none" selected="selected">Оберіть..</option> <option value="Загальна практика - сімейна медицина">
+                            Загальна практика - сімейна медицина
+                          </option><option value="Профпатологія">
+                            Профпатологія
+                          </option><option value="Неврологія">
+                            Неврологія
+                          </option><option value="Психіатрія">
+                            Психіатрія
+                          </option><option value="Психотерапія">
+                            Психотерапія
+                          </option><option value="Наркологія">
+                            Наркологія
+                          </option><option  value="Ортопедія">
+                            Ортопедія
+                          </option><option  value="Травматологія">
+                            Травматологія
+                          </option><option  value="Хірургія">
+                            Хірургія
+                          </option><option  value="Урологія">
+                            Урологія
+                          </option><option  value="Сексопатологія">
+                            Сексопатологія
+                          </option><option  value="Проктологія">
+                            Проктологія
+                          </option><option  value="Отоларингологія">
+                            Отоларингологія
+                          </option><option  value="Офтальмологія">
+                            Офтальмологія
+                          </option><option  value="Гастроентерологія">
+                            Гастроентерологія
+                          </option><option  value="Ревматологія">
+                            Ревматологія
+                          </option><option  value="Кардіологія">
+                            Кардіологія
+                          </option><option  value="Алергологія">
+                            Алергологія
+                          </option><option  value="Пульмонологія">
+                            Пульмонологія
+                          </option><option  value="Лікар-інфекціоніст">
+                            Лікар-інфекціоніст
+                          </option><option  value="Лікар функціональної діагностики">
+                            Лікар функціональної діагностики
+                          </option><option  value="Гематологія">
+                            Гематологія
+                          </option><option  value="Ендокринологія">
+                            Ендокринологія
+                          </option><option  value="Педіатрія">
+                            Педіатрія
+                          </option><option  value="Анестезіологія">
+                            Анестезіологія
+                          </option><option  value="Акушерство і гінекологія">
+                            Акушерство і гінекологія
+                          </option><option  value="Терапія">
+                            Терапія
+                          </option><option  value="Реабілітологія">
+                            Реабілітологія
+                          </option><option  value="Ендоскопія">
+                            Ендоскопія
+                          </option><option  value="Ультразвукова діагностика">
+                            Ультразвукова діагностика
+                          </option><option  value="Рентгенологія">
+                            Рентгенологія
+                          </option><option  value="Хірургічна стоматологія">
+                            Хірургічна стоматологія
+                          </option><option  value="Нейрохірургія">
+                            Нейрохірургія
+                          </option><option  value="Кардіоревматологія">
+                            Кардіоревматологія
+                          </option><option  value="Дермато-венерологія">
+                            Дермато-венерологія
+                          </option><option  value="Підліткова терапія">
+                            Підліткова терапія
+                          </option><option  value="Дитяча травматологія">
+                            Дитяча травматологія
+                          </option><option  value="Дитяча ендокринологія">
+                            Дитяча ендокринологія
+                          </option><option  value="Дитяча отоларингологія">
+                            Дитяча отоларингологія
+                          </option><option  value="Дитяча хірургія">
+                            Дитяча хірургія
+                          </option><option  value="Дитяча офтальмологія">
+                            Дитяча офтальмологія
+                          </option><option  value="Дитяча неврологія">
+                            Дитяча неврологія
+                          </option><option  value="Дитяча психіатрія">
+                            Дитяча психіатрія
+                          </option><option  value="Дитяча алергологія">
+                            Дитяча алергологія
+                          </option><option  value="Дитяча офтальмологія">
+                            Дитяча офтальмологія
+                          </option><option  value="Дитяча кардіоревматологія">
+                            Дитяча кардіоревматологія
+                          </option><option  value="Психологія">
+                            Психологія
+                          </option><option  value="Керівник закладу (ПМСД)">
+                            Керівник закладу (ПМСД)
+                          </option><option  value="Реєстратор">
+                            Реєстратор
+                          </option><option  value="Лікар-стоматолог-терапевт">
+                            Лікар-стоматолог-терапевт
+                          </option><option  value="Лікар-стоматолог-ортопед">
+                            Лікар-стоматолог-ортопед
+                          </option><option  value="Лікар-стоматолог-хірург">
+                            Лікар-стоматолог-хірург
+                          </option><option  value="Лікар-стоматолог дитячий">
+                            Лікар-стоматолог дитячий
+                          </option><option  value="Лікар-стоматолог-ортодонт">
+                            Лікар-стоматолог-ортодонт
+                          </option><option  value="Фтизіатрія">
+                            Фтизіатрія
+                          </option><option  value="Онкологія">
+                            Онкологія
+                          </option><option  value="Бактеріологія">
+                            Бактеріологія
+                          </option><option  value="Лікар-стоматолог">
+                            Лікар-стоматолог
+                          </option><option  value="Лікар-лаборант">
+                            Лікар-лаборант
+                          </option><option  value="Медичний статист">
+                            Медичний статист
+                          </option><option  value="Нефрологія дитяча">
+                            Нефрологія дитяча
+                          </option><option  value="Нефрологія">
+                            Нефрологія
+                          </option><option  value="Фізіотерапія">
+                            Фізіотерапія
+                          </option><option  value="Ортопедія і травматологія">
+                            Ортопедія і травматологія
+                          </option><option  value="Оператор ЕОМ">
+                            Оператор ЕОМ
+                          </option><option  value="Логопедія">
+                            Логопедія
+                          </option><option  value="Медична сестра">
+                            Медична сестра
+                          </option><option  value="Імунологія">
+                            Імунологія
+                          </option><option  value="Невропатологія">
+                            Невропатологія
+                          </option><option  value="Судинна хірургія">
+                            Судинна хірургія
+                          </option><option  value="Дерматологія">
+                            Дерматологія
+                          </option><option  value="Трансфузіологія">
+                            Трансфузіологія
+                          </option><option  value="Неонатологія">
+                            Неонатологія
+                          </option><option  value="Педіатрична ЛКК">
+                            Педіатрична ЛКК
+                          </option><option  value="Завідувач відділенням">
+                            Завідувач відділенням
+                          </option><option  value="Лікар-анестезіолог дитячий">
+                            Лікар-анестезіолог дитячий
+                          </option><option  value="Лікар-хірург дитячий для надання ургентної  допомоги">
+                            Лікар-хірург дитячий для надання ургентної  допомоги
+                          </option><option  value="Лікар-хірург дитячий">
+                            Лікар-хірург дитячий
+                          </option><option  value="Лікар-офтальмолог дитячий">
+                            Лікар-офтальмолог дитячий
+                          </option><option  value="Лікар-уролог дитячий">
+                            Лікар-уролог дитячий
+                          </option><option  value="Лікар-нейрохірург дитячий">
+                            Лікар-нейрохірург дитячий
+                          </option><option  value="Лікар з ультразвукової діагностики">
+                            Лікар з ультразвукової діагностики
+                          </option><option  value="Лікар з функціональної діагностики">
+                            Лікар з функціональної діагностики
+                          </option><option  value="Лікар-невролог дитячий">
+                            Лікар-невролог дитячий
+                          </option><option  value="Лікар-ендоскопіст">
+                            Лікар-ендоскопіст
+                          </option><option  value="Лікар-алерголог дитячий">
+                            Лікар-алерголог дитячий
+                          </option><option  value="Лікар-дерматовенеролог дитячий">
+                            Лікар-дерматовенеролог дитячий
+                          </option><option  value="Лікар-ендокринолог дитячий">
+                            Лікар-ендокринолог дитячий
+                          </option><option  value="Лікар-отоларинголог дитячий">
+                            Лікар-отоларинголог дитячий
+                          </option><option  value="Лікар-пульмонолог дитячий">
+                            Лікар-пульмонолог дитячий
+                          </option><option  value="Лікар-кардіоревматолог дитячий">
+                            Лікар-кардіоревматолог дитячий
+                          </option><option  value="Лікар-гінеколог дитячого та підліткового віку">
+                            Лікар-гінеколог дитячого та підліткового віку
+                          </option><option  value="Лікар-генетик">
+                            Лікар-генетик
+                          </option><option  value="Лікар-нефролог дитячий">
+                            Лікар-нефролог дитячий
+                          </option><option  value="Лікар-гастроентеролог дитячий">
+                            Лікар-гастроентеролог дитячий
+                          </option><option  value="Лікар-гематолог дитячий">
+                            Лікар-гематолог дитячий
+                          </option><option  value="Лікар-імунолог дитячий">
+                            Лікар-імунолог дитячий
+                          </option><option  value="Біолог">
+                            Біолог
+                          </option><option  value="Лікар-інтерн">
+                            Лікар-інтерн
+                          </option><option  value="Лікар-терапевт">
+                            Лікар-терапевт
+                          </option><option  value="Медичний директор">
+                            Медичний директор
+                          </option><option  value="Лікар приймального відділення">
+                            Лікар приймального відділення
+                          </option><option  value="Пост">
+                            Пост
+                          </option><option  value="Реєстратура">
+                            Реєстратура
+                          </option><option  value="Асистент">
+                            Асистент
+                          </option><option  value="Сестринська справа">
+                            Сестринська справа
+                          </option><option  value="Лікар-статистик">
+                            Лікар-статистик
+                          </option><option  value="Організація і управління охороною здоров‘я">
+                            Організація і управління охороною здоров‘я
+                          </option><option  value="Косметологія">
+                            Косметологія
+                          </option><option  value="Організація і управління ЗОЗ">
+                            Організація і управління ЗОЗ
+                          </option><option  value="Лікувальна справа">
+                            Лікувальна справа
+                          </option><option  value="Вірусологія">
+                            Вірусологія
+                          </option><option  value="Епідеміологія">
+                            Епідеміологія
+                          </option><option  value="Патологічна анатомія">
+                            Патологічна анатомія
+                          </option><option  value="Медична сестра з функціональної діагностики">
+                            Медична сестра з функціональної діагностики
+                          </option><option  value="Акушерська справа">
+                            Акушерська справа
+                          </option><option  value="Хірургія серця і магістральних судин">
+                            Хірургія серця і магістральних судин
+                          </option><option  value="Загальна фармація">
+                            Загальна фармація
+                          </option><option  value="Головна медична сестра">
+                            Головна медична сестра
+                          </option><option  value="Старша медична сестра">
+                            Старша медична сестра
+                          </option><option  value="Дієтологія">
+                            Дієтологія
+                          </option><option  value="Сестринська справа операційна">
+                            Сестринська справа операційна
+                          </option><option  value="Медсестра-анестезист">
+                            Медсестра-анестезист
+                          </option><option  value="Лабораторна справа">
+                            Лабораторна справа
+                          </option><option  value="Сестра медична з масажу">
+                            Сестра медична з масажу
+                          </option><option  value="Рефлексотерапія">
+                            Рефлексотерапія
+                          </option><option  value="Ортопедична стоматологія">
+                            Ортопедична стоматологія
+                          </option><option  value="Клінічна фармація">
+                            Клінічна фармація
+                          </option><option  value="Фельдшерська справа">
+                            Фельдшерська справа
+                          </option><option  value="Онкохірургія">
+                            Онкохірургія
+                          </option><option  value="Лікувальна фізкультура">
+                            Лікувальна фізкультура
+                          </option><option  value="Торакальна хірургія">
+                            Торакальна хірургія
+                          </option><option  value="Фізична терапія">
+                            Фізична терапія
+                          </option><option  value="Ерготерапія">
+                            Ерготерапія
+                          </option><option  value="Медицина невідкладних станів">
+                            Медицина невідкладних станів
+                          </option><option  value="Радіологія">
+                            Радіологія
+                          </option><option  value="Клінічна лабораторна діагностика">
+                            Клінічна лабораторна діагностика
+                          </option><option  value="Клінічна біохімія">
+                            Клінічна біохімія
+                          </option><option  value="Фізична та реабілітаційна медицина">
+                            Фізична та реабілітаційна медицина
+                          </option><option  value="Санологія">
+                            Санологія
+                          </option><option  value="Трансплантологія">
+                            Трансплантологія
+                          </option><option  value="Інфекційні хвороби">
+                            Інфекційні хвороби
+                          </option><option  value="Організація і управління охороною здоров'я">
+                            Організація і управління охороною здоров'я
+                          </option><option value="Сурдологія">
+                            Сурдологія
+                          </option><option value="Медичний статистик">
+                            Медичний статистик
+                          </option><option value="Дерматовенерологія">
+                            Дерматовенерологія
+                          </option><option value="Керівник закладу (СМД)">
+                            Керівник закладу (СМД)
+                          </option><option value="Керівник закладу (екстрена медична допомога)">
+                            Керівник закладу (екстрена медична допомога)
+                          </option><option value="Комбустіологія">
+                            Комбустіологія
+                          </option><option value="Геріатрія">
+                            Геріатрія
+                          </option><option value="Дитяча ортопедія і травматологія">
+                            Дитяча ортопедія і травматологія
+                          </option><option value="Променева терапія">
+                            Променева терапія
+                          </option><option value="Онкогінекологія">
+                            Онкогінекологія
+                          </option></select></td>
+                        <td><input type="text" placeholder="Вкажіть назву закладу" class="form-control"></td>
+                        <td><input type="text" placeholder="Вкажіть ПІБ" class="form-control"></td>
+                        <td><button id="button" class="btn btn-primary">Очистити фільтри</button></td>
+                    </tr>
+                </table>
+            <div class="data_rezult">
+                <table width=100%>
+                    <tr>
+                        <th class="th_two">Дата створення</th>
+                        <th class="th_two">Дата останнього редагування</th>
+                        <th class="th_two">Тип</th>
+                        <th class="th_two">Спеціальність</th>
+                        <th class="th_two">Заклад</th>
+                        <th class="th_two">Лікар</th>
+                    </tr>
+                    <tr id="form">
+                        <td class="th_two">
+                            <input type="date" class="form-control date-input"readonly>
+                        </td>
+                        <td class="th_two">
+                            <input type="date" class="form-control date-input"readonly>
+                        </td>
+                        <td class="th_two"><input type="text" placeholder="Тип" class="form-control" readonly></td>
+                        <td class="th_two"><input type="text" placeholder="Спеціальність" class="form-control"readonly></td>
+                        <td class="th_two"><input type="text" placeholder="Назва закладу" class="form-control"readonly></td>
+                        <td class="th_two"><input type="text" placeholder="ПІБ лікаря" class="form-control"readonly></td>
+                    </tr>
+                </table>
+            </div>
+          </div>
+        </div>
+    </main></div>
+<footer class="footer_wrapper">
+    <div class="footer_item container">
+    <div class="footer_logo_black col-3">
+        <a href="/index.html"><img src="/img/svg/logo_about_project.svg" alt="" class="logo_black"></a>
+    </div>
+    <nav class="footer_nav col-6">
+        <ul class="footer_menu">
+            <li class="footer_link"><a href="/" class="footer_menu-link">Головна</a></li>
+            <li class="footer_link"><a href="/contacts.html" class="footer_menu-link">Контакти</a></li>
+            <li class="footer_link"><a href="/rules.html" class="footer_menu-link">Правила</a></li>
+            <li class="footer_link"><a href="/about_project.html" class="footer_menu-link">Про проєкт</a></li>
+        </ul>
+    </nav>
+    <div class="credit">Design by IBSsoft</div>
+    </div>
+    <div class="hiden"></div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/acc_pat.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
